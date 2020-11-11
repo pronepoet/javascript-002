@@ -2,7 +2,16 @@ var data = [
     {
         username:"Phillip",
         password:"12345"
+    },
+    {
+        username:"Bridgit",
+        password:"Moire"
+    },
+    {
+        username:"Viktor",
+        password:"Krum"
     }
+
 ];
 var newsfeed = [
     {
@@ -19,15 +28,29 @@ var newsfeed = [
     },
 ];
 
-function signIn(username,password){
-if (username = data[0].username && password === data[0].password){
-console.log(newsfeed);
-}else{
-alert("Wrong username or password!");
-}
+function isUserValid(username,password){
+    for (var i = 0; i < data.length; i++){
+        if (data[i].username === username && data[i].password === password){
+           return true;
+        
+        }
+        
 
-
+}return false;
 };
+
+
+function signIn(username,password){
+    if (isUserValid(username,password)){
+        console.log(newsfeed);
+        }else{
+        alert("Wrong username or password!");
+        }
+    };
+
+
+
+
 var usernamePrompt = prompt(`What's your username?`);
 var passwordPrompt = prompt(`What's your password?`);
 signIn(usernamePrompt,passwordPrompt);
