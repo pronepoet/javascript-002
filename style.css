@@ -1,0 +1,12 @@
+.wants {
+
+text-shadow: 2px 2px 5px red;
+}
+
+.new{
+    text-decoration: line-through;
+}
+.center{
+    text-align: center;
+    letter-spacing: 5px;
+}
