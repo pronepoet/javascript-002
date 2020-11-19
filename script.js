@@ -54,3 +54,6 @@ function signIn(username,password){
 var usernamePrompt = prompt(`What's your username?`);
 var passwordPrompt = prompt(`What's your password?`);
 signIn(usernamePrompt,passwordPrompt);
+
+document.querySelectorAll("p")[3].className = "center";
+document.querySelector("li").classList = "new";
